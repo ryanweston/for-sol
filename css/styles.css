@@ -311,6 +311,21 @@ section {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
+      .navbar { 
+        padding:10px!important;
+        padding-bottom:12px;
+        
+      }
+
+      .navbar li { 
+        padding:0;
+      }
+      .abs-center-x {
+        text-align:center;
+      }
+      .active { 
+        padding:0px;
+      }
       .symbol-row { 
         /* border: 2px solid #63534C; */
         background-color:#E6E2E2;
