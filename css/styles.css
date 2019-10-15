@@ -10,11 +10,21 @@ body {
   position:relative;
 }
 
-.active {
+.badge { 
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.navbar .active {
   border-radius:5px;
   border:3px solid #63534C;
   padding-left:15px!important;
   padding-right:15px!important;
+}
+
+.tabcontent {
+  display: none;
 }
 
 button { 
@@ -282,7 +292,6 @@ margin-top:10px;
   font-family: futura-pt;
   font-weight:200;
 }
-
 .ingredients {
   padding-top:50px;
   padding-bottom:50px;
@@ -290,17 +299,25 @@ margin-top:10px;
   text-align: center;
   /* width: 30%; */
 }
-
 .ingredients img { 
   opacity:0.5;
   width:20%;
-  
+  transition: transform .2s; /* Animation */
+}
+.ingredients img:hover { 
+  opacity:1;
+  padding-bottom:5px;
+  transform: scale(1.5);
+  z-index:1;
+}
+.ingredients .active { 
+  opacity:1;
+
 }
 
-.ing-table {
-  display:flex;
-  align-items: center;
-  justify-content: center;
+/* Displays first ingredient before function clears class display */
+#London {
+  display:block;
 }
 
 .table { 
@@ -309,17 +326,9 @@ margin-top:10px;
 }
 
 .title { 
-    -moz-transform: rotate(270deg);  /* FF3.5+ */
-    -o-transform: rotate(270deg);  /* Opera 10.5 */
-    -webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
-    transform: rotate(-90deg);
-    -moz-transform-origin: 100% 100%;
-    -o-transform-origin: 100% 100%;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
+    
     position: relative;
     white-space: nowrap; /* Prevents text breaking into two lines */
- 
     width:12%;
     line-height:2em;
     font-weight:100;
@@ -331,6 +340,7 @@ margin-top:10px;
   visibility: hidden;
   width:0;
 }
+
 
 /* MOBILE STYLES */
 /* Extra small devices (portrait phones, less than 576px) */

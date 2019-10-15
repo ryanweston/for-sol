@@ -7,20 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yogan Yoghurts</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/hbu0kfp.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-          $( "#tabs" ).tabs({
-            event: "mouseover"
-          });
-        } );
-        </script>
     
   <style>
     @font-face {
@@ -28,9 +21,18 @@
       src: url("assets/fonts/GooseberryJuice.woff") format("woff");
     }
   </style>
+  <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="10">
+
+    <!-- <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script> -->
 
     <nav id="navbar" class="navbar navbar-dark fixed-top navbar-expand-sm navbar-dark">
 
@@ -123,7 +125,7 @@
               <div class="col-md-6 product-info">
                   <div class="d-flex flex-column bd-highlight">
                     <div class="p-2 bd-highlight">
-                      <h2 class="subtitle">STEAMING STRAWBERRY <span class="badge badge-success"> NEW!</span></h2>
+                      <h2 class="subtitle">STEAMING STRAWBERRY <span class="badge badge-success animated pulse"> NEW!</span></h2>
                       <h2 class="product-sub">DELICIOUS LUCIOUS LOCKS BOIYO</h2>
                       <p class="padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -150,7 +152,7 @@
                           <!-- Add padding to text above -->
                           <p>Bananas, peaches, coconut milk</p>
                           <span class="price">$5.50</span>
-                          <button class="smallButton"><i class="fas fa-shopping-cart"></i></button>
+                          <button class="smallButton"><i class="fas fa-plus"></i><i class="fas fa-shopping-cart"></i></button>
                           
                         </div>
                 </div>
@@ -169,7 +171,7 @@
                             <!-- Add padding to text above -->
                             <p>Bananas, peaches, coconut milk</p>
                             <span class="price">$5.50</span>
-                            <button class="smallButton"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="smallButton"><i class="fas fa-plus"></i><i class="fas fa-shopping-cart"></i></button>
                     </div>
                       
                     </div>
@@ -187,7 +189,7 @@
                       <!-- Add padding to text above -->
                       <p>Bananas, peaches, coconut milk</p>
                       <span class="price">$5.50</span>
-                      <button class="smallButton"><i class="fas fa-shopping-cart"></i></button>
+                      <button class="smallButton"><i class="fas fa-plus"></i><i class="fas fa-shopping-cart"></i></button>
                     </div>
                 </div>
             </div>
@@ -209,11 +211,18 @@
            <br>
           
             <div class="ingredients">
-              <img src="assets/images/cherry.png">
-              <img src="assets/images/banana.png">
-              <img src="assets/images/strawberry.png">
-              <img src="assets/images/lemon.png">
+              <img  id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')" onmouseover="openCity(event, 'London')" src="assets/images/cherry.png">
+              <img class="tablinks" onmouseover="openCity(event, 'Paris')" onclick="openCity(event, 'Paris')" src="assets/images/banana.png">
+              <img class="tablinks active" onmouseover="openCity(event, 'Tokyo')" onclick="openCity(event, 'Tokyo')" src="assets/images/strawberry.png">
+              <img class="tablinks" onmouseover="openCity(event, 'Orange')" onclick="openCity(event, 'Orange')" src="assets/images/lemon.png">
             </div>
+
+            
+            
+            
+              
+            
+            
 
           </div>
 
@@ -221,33 +230,119 @@
           <span class="top-text-hidden"><p>Slutty Strawberry</p></span>
 
           <div class="col-md-4 ing-table">
-              <p class="title"> Slutty Strawberry</p>
-            <table class="align-bottom table table-striped">
-              <tbody>
-                  <tr>
-                      <th scope="row">Salts</th>
-                      <td>50g</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Sugars</th>
-                      <td>200g</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Fats</th>
-                      <td>75g</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Saturates</th>
-                        <td>75g</td>
-                      </tr>
+              
+              <div id="Paris" class="tabcontent">
+                  <p class="title"> Slutty Strawberry</p>
+                <table class="align-bottom table table-striped">
+                  <tbody>
                       <tr>
-                        <th scope="row">Energy</th>
-                        <td>955Kj</td>
-                      </tr>
-              </tbody>
-            </table>
-            
+                          <th scope="row">Salts</th>
+                          <td>50g</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sugars</th>
+                          <td>200g</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Fats</th>
+                          <td>705g</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturates</th>
+                            <td>75g</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Energy</th>
+                            <td>1000Kj</td>
+                          </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div id="Orange" class="tabcontent">
+                  <p class="title"> Peppery Orange</p>
+                <table class="align-bottom table table-striped">
+                  <tbody>
+                      <tr>
+                          <th scope="row">Salts</th>
+                          <td>50g</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sugars</th>
+                          <td>200g</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Fats</th>
+                          <td>705g</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturates</th>
+                            <td>75g</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Energy</th>
+                            <td>1000Kj</td>
+                          </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div id="Tokyo" class="tabcontent">
+                  <p class="title"> Horny Humous</p>
+                <table class="align-bottom table table-striped">
+                  <tbody>
+                      <tr>
+                          <th scope="row">Salts</th>
+                          <td>50g</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sugars</th>
+                          <td>2000g</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Fats</th>
+                          <td>75g</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturates</th>
+                            <td>75g</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Energy</th>
+                            <td>955Kj</td>
+                          </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="London" class="tabcontent">     
+                  <p class="title"> Lucious Lavacado</p>  
+                  <table class="align-bottom table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Salts</th>
+                            <td>50g</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Sugars</th>
+                            <td>200g</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Fats</th>
+                            <td>75g</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Saturates</th>
+                              <td>75g</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Energy</th>
+                              <td>955Kj</td>
+                            </tr>
+                    </tbody>
+                  </table>
+            </div>
           </div>
+
         </div>
       </div>
      </div>
