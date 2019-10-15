@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/hbu0kfp.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -67,8 +68,8 @@
       </div>
 
       
-      <div class="arrow">
-          <a href="#whyvegan">
+      <div class="arrow animated infinite bounce">
+          <a  href="#whyvegan">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.5" height="11.5" viewBox="0 0 39 23">
             <image width="39" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAXCAYAAACI2VaYAAAChklEQVRIibWWSWsVQRRGT6Ki4ATOA4ILQXCn4FJw2IiKm5TEIYUaEVE0FQfQ3yC4KFFiEgmaiiO9FBSiqEv1Fwi6EkR0KUkcwMhNqvF13/fyujvmrN7rr4s+fW8N3TI+Po6zZhFwENgO/AGGgcc+JGPMMM6azfHZm4D3wCMfknfy1JaujrZlwC2gLafxQMb6kHybKT1njTzzOrCm5vJX4DTwpBU4WUdMOATcdtYsVcn/EWsH7uTEhBXANaBd5Paokf/YD9x11ixRyfTEjgL9wAIVTrIeOCBys1WUZW8UXK2SamIW8MBCFWaZJXKv1GXNPmDAWbNKJeXEOoE+YLEKs8g8fyZyN4E3KtbsljnirFk5DTGZ/PNUmOUHcEXme7qVbATuA1vUrZrnQKcPySeVNCCK+SnmWMoocMmHpEf+T8jFN9sQBbeqIZqXQIcPyWeV5HDWHAN6ClTsF3DOh6QvvdCa/vAh+QDYgi3eATx01qxVSQ3OGtmmbhQQG82LZeSioOzQR4C3arhmGxCcNetUMil2PO5X81WoxS7kxZRcFPwIHC5RwcG8oLOmG+gtsF38jmK9KqknlxN8rUKNnMdD6T7orLkIXAXmqDuzjABnGolRuyDqER94L1aoGU8BObAvA3Ob3JtZlY2YUi5WQjbeIWCXCqshq/KsD0l/s9F121qLD8kXQCb3CxWWZySuyqZiFKlcSqygtHhnRTH5NuyutyobUViOSUH5vBms0OKfcfIPqGQKmra1lngiSIuHVdiY78CpsmKUrVxKiRbLHOuqIlZZTijQ4rFYsaCSgpRqay2xxfJFK18peWSFn5iOmFC5cinOmuXA+dhieVk5lwd9SIqcz40B/gJf2t4HFm8G4wAAAABJRU5ErkJggg=="/>
           </svg></a>
@@ -212,11 +213,15 @@
               <img src="assets/images/banana.png">
               <img src="assets/images/strawberry.png">
               <img src="assets/images/lemon.png">
-              
+            </div>
 
           </div>
+
+          <!-- Fixes hierarchy for mobile, vertical text to top centered title -->
+          <span class="top-text-hidden"><p>Slutty Strawberry</p></span>
+
           <div class="col-md-4 ing-table">
-              
+              <p class="title"> Slutty Strawberry</p>
             <table class="align-bottom table table-striped">
               <tbody>
                   <tr>
@@ -241,32 +246,16 @@
                       </tr>
               </tbody>
             </table>
+            
           </div>
         </div>
       </div>
-     
+     </div>
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#e6e2e2" fill-opacity="1" d="M0,160L26.7,154.7C53.3,149,107,139,160,122.7C213.3,107,267,85,320,106.7C373.3,128,427,192,480,202.7C533.3,213,587,171,640,128C693.3,85,747,43,800,42.7C853.3,43,907,85,960,106.7C1013.3,128,1067,128,1120,149.3C1173.3,171,1227,213,1280,234.7C1333.3,256,1387,256,1413,256L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
     </svg>
-    <div id="tabs">
-        <ul>
-          <li><a href="#tabs-1">Nunc tincidunt</a></li>
-          <li><a href="#tabs-2">Proin dolor</a></li>
-          <li><a href="#tabs-3">Aenean lacinia</a></li>
-        </ul>
-        <div id="tabs-1">
-            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-          </div>
-          <div id="tabs-2">
-            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-          </div>
-          <div id="tabs-3">
-            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-          </div>
-  </div>
     
 
     
