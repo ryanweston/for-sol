@@ -1,0 +1,582 @@
+@font-face {
+  font-family: "Doink";
+  src: url("/assets/fonts/GooseberryJuice.woff") format("woff");
+}
+
+/* Default styles */
+
+body { 
+  font-family:futura-pt!important;
+  position:relative;
+}
+
+/* STYLES FOR SUB-CONTENT LINKS */
+
+.links { 
+  padding:40px;
+  text-align:center;
+  color: #63534C;
+}
+
+.links a { 
+  font-family: futura-pt;
+  border-bottom:1px solid #63534C;
+  padding-bottom:1px;
+  color: #63534C;
+}
+
+.links a:hover {
+  font-size:1em;
+  text-decoration: none;
+  color: #63534C;
+}
+
+.links svg { 
+  width:0.6em;
+  margin-bottom:3px;
+}
+
+.badge { 
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.navbar .active {
+  border-radius:5px;
+  border:3px solid #63534C;
+  padding-left:15px!important;
+  padding-right:15px!important;
+}
+
+.tabcontent {
+  display: none;
+}
+
+button { 
+  border:3px solid #63534C;
+  border-radius:5px!important;
+  background:none;
+  font-family:"Doink"!important;
+  font-size:0.9em!important;
+  color:#63534C; 
+  padding:5px 20px 5px 20px;
+  
+}
+
+
+.smallButton {
+  /* float:right; */
+  font-size:0.7em!important;
+  padding:3px 15px 3px 15px;
+  border:2px solid #63534C;
+  margin-top:5px;
+}
+
+/* Padding for each content section */
+.global-padding { 
+  padding-top:3em;
+  padding-bottom:5em;
+}
+
+
+
+h1 { 
+  font-family: "Doink" !important;
+  line-height:0;
+  font-size:3em!important;
+  color:#63534C; 
+}
+
+h2 {
+  color:#63534C; 
+}
+
+p { 
+  font-family: futura-pt, sans-serif;
+  font-weight:200;
+  font-style: normal;
+  color:#63534C; 
+}
+
+/* Header styles */
+header h1 {
+  font-family: "Doink" !important;
+  font-size:10em!important; 
+  color:#63534C; 
+  line-height:0.9em;
+
+}
+
+header h2 {
+  font-size:1.2em !important;
+  color:#63534C; 
+  font-family:futura-pt!important;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.myHeader { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:75vh; 
+  background-color:white;
+  position:relative;
+  overflow:hidden;
+ 
+}
+
+.myHeader > svg {
+  display:block;
+  z-index:2;
+}
+
+.brand { 
+  text-align: center;
+  max-width:70%;
+  margin:0 auto;
+}
+
+.navbar { 
+  margin:0!important;
+  padding:30px 0px 30px 0px!important;
+  background-color:white;
+}
+
+.navbar li { 
+  padding-left:20px;  
+  font-family: Doink;
+  letter-spacing: 2px;
+  color:#63534C !important;
+}
+
+.navbar a {
+  color:#63534C !important;
+}
+
+.arrow { 
+  position:absolute;
+  bottom:0px;
+}
+
+
+@media (min-width: 575px) { 
+  .abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+section { 
+  width:100%;
+}
+
+.brown-sec { 
+  background-color: #E6E2E2;
+}
+
+.why-vegan p{ 
+  padding-top:10px;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+
+
+.symbol-row { 
+  /* border: 2px solid #63534C; */
+  background-color: rgba(99, 83, 76, .1); /* RGBA used for background transparency  */
+  border-radius:3px;
+  text-align: center;
+  margin-top:50px;
+  padding:50px 50px 50px 50px;
+}
+
+.symbol-row img {
+  width:25%;
+}
+
+.symbol-row h3 {
+  color: #63534C;
+  font-weight:400;
+}
+
+.symbol-row p {
+  font-size:1rem;
+  /* width:75%; */
+  padding:0px 50px 0px 50px;
+  font-weight:300;
+}
+
+
+/* SHOP SECTION */
+
+.underline:after {
+  background: none repeat scroll 0 0 #63534C;
+  bottom: -10px;
+  content: "";
+  display: block;
+  border:2px solid #63534C;
+  border-radius:10px;
+  height: 5px;
+  position: relative;
+  width: 100px;
+}
+
+.product{ 
+  width:60%;
+  display:block;
+  margin:auto;
+
+}
+
+.small-product{ 
+  width:50%;
+  display:block;
+}
+
+.product-info { 
+  display:flex;
+  align-items: center;
+}
+
+.subtitle { 
+  font-family: "Doink" !important;
+  font-size:1.7em;
+}
+
+.product-sub { 
+  line-height:0px;
+  font-family:futura-pt;
+  font-size:1.2rem;
+  font-weight:200;
+}
+
+.padding { 
+  margin-top:20px;
+  padding:10px 0 10px 0px;
+}
+
+.more-product { 
+  margin-top:50px;
+  background-color: #F2F2F2;
+  border-radius:20px;
+  padding:30px 30px 30px 0px!important;
+}
+
+.more-product img { 
+  width:50%;
+  margin:0 auto;
+  
+}
+
+.more-product p { 
+
+  margin:0;
+  font-weight:100;
+  font-size:0.8em;
+}
+
+.more-product h3 {
+  font-family:"Doink" ;
+  margin:0;
+  font-size:1.1em;
+  color: #63534C;
+}
+
+.product-info .price {
+  font-size:2.3em;
+  
+}
+
+.bottom {
+position:absolute;
+margin-left:10px;
+margin-top:10px;
+}
+
+
+.price {
+  font-family:"Doink" ;
+  font-size:1.2em;
+  font-weight: 200;
+  /* color: rgb(151, 130, 121); */
+  color:#63534C;
+  
+}
+
+/* Ingredient Section */
+
+.ingredient-sec {
+  background-color:#E6E2E2;
+}
+
+.ingredient-sec h2{ 
+  font-size:1em;
+  font-family: futura-pt;
+  font-weight:200;
+}
+.ingredients {
+  padding-top:50px;
+  padding-bottom:50px;
+  display:block;
+  text-align: center;
+  /* width: 30%; */
+}
+.ingredients img { 
+  opacity:0.5;
+  width:20%;
+  transition: transform .2s; /* Animation */
+}
+.ingredients img:hover { 
+  opacity:1;
+  padding-bottom:5px;
+  transform: scale(1.5);
+  z-index:1;
+}
+.ingredients .active { 
+  opacity:1;
+}
+
+
+/* Displays first ingredient before function clears class display */
+#Strawberry {
+  display:block;
+}
+
+.table { 
+  color:#63534C!important;
+
+}
+
+.title { 
+    
+    position: relative;
+    white-space: nowrap; /* Prevents text breaking into two lines */
+    width:12%;
+    line-height:2em;
+    font-weight:100;
+    border-bottom:1px solid #63534C;
+    margin-right:15px;
+}
+
+
+
+
+/* MOBILE STYLES */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+      .navbar { 
+        padding:10px!important;
+        padding-bottom:12px;
+        
+      }
+
+      .navbar li { 
+        padding:0;
+      }
+      .abs-center-x {
+        text-align:center;
+      }
+      .active { 
+        padding:0px;
+      }
+      .symbol-row { 
+        /* border: 2px solid #63534C; */
+        background-color:#E6E2E2;
+        border-radius:3px;
+        text-align: center;
+        margin-top:0px;
+        
+      }
+
+      .symbol-row p {
+        font-size:0.7em;
+        padding-left:10%!important;
+        padding-right:10%!important;
+      }
+
+      .mobile-margin { 
+        margin-top:30px;
+      }
+      .more-product img { 
+        width:35%;
+      }
+
+     
+
+      .product{ 
+        width:50%;
+        display:block;
+        margin:auto;
+      }
+
+      .first { 
+        margin-top:30px;
+      }
+
+       p {
+        font-size:0.9em;
+        font-weight:500;
+      }
+
+}
+
+
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+  /* HEADER STYLES */
+      header h1 {
+        font-size:5em!important; 
+      }
+      
+      header h2 {
+        font-size:1em!important;
+      }
+
+      .symbol-row h3 {
+        font-size:1.2em;
+      }
+      
+
+      .symbol-row { 
+        padding:0;
+      }
+      
+      .product-info { 
+        margin-top:30px;
+      }
+      
+      .padding { 
+        margin:0; 
+        padding:10px 0px 10px 0px;
+      }
+
+      .shift-right h1 {
+        font-size:1.2em!important;
+      }
+
+     
+
+    }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+      .symbol-row p {
+        font-size:0.7em;
+        padding:0;
+      }
+
+      .subtitle { 
+        font-size:1.35em;
+      }
+      
+      .product-sub { 
+        font-size:1rem;
+      }
+
+      .more-product h3 {
+        font-size:0.9em;
+      }
+    
+}
+
+.quote img {
+  width:80%;
+  opacity:0.5;
+  border-radius:30px;
+  
+  
+}
+
+.shift-right {
+  /* margin-right:-20%; */
+  
+  z-index:1;
+}
+
+.quote {
+  
+  overflow:visible;
+}
+
+
+
+.catering-info {
+  border-radius:10px;
+}
+
+
+#catering .symbol-row {
+  background:none;
+}
+
+#catering h2{ 
+  font-size:1.5em;
+  font-weight:200;
+  margin-top:50px;
+}
+
+
+/* FORM STYLES */
+
+.contact-details { 
+  /* background-color:#F2F2F2; */
+}
+
+.form { 
+  font-family: futura-pt;
+
+}
+.form .name { 
+  width:49%;
+  float:left;
+
+}
+
+.form .email {
+  width: 49%;
+  float: left;
+  margin-left:2%;
+}
+
+.form textarea {
+  border: 3px solid #63534C;
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius:5px;
+}
+
+.form input {
+  outline: 0;
+  background: white;
+  width: 100%;
+  border: 3px solid #63534C;
+  border-radius:5px;
+  margin: 0 0 2%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 900;
+  color: #63534C;
+}
+
+.contact-details h2 {
+  font-size:2.5em;
+  font-weight:300;
+  text-align:right;
+}
+
+.form button { 
+  margin-top:1%;
+}
