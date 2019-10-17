@@ -10,6 +10,34 @@ body {
   position:relative;
 }
 
+/* STYLES FOR SUB-CONTENT LINKS */
+
+.links { 
+  padding:40px;
+  text-align:center;
+  color: #63534C;
+}
+
+.links a { 
+  position: absolute;
+  font-family: futura-pt;
+  border-bottom:1px solid #63534C;
+  padding-bottom:1px;
+  color: #63534C;
+}
+
+.links a:hover {
+  font-size:1em;
+  text-decoration: none;
+  color: #63534C;
+  -webkit-animation: shake 1s;
+  animation: shake 1s;
+}
+
+.links svg { 
+  width:0.6em;
+  margin-bottom:3px;
+}
 
 .badge { 
   animation-duration: 3s;
@@ -36,9 +64,14 @@ button {
   font-size:0.9em!important;
   color:#63534C; 
   padding:5px 20px 5px 20px;
+  box-shadow: 0.3em 0.3em 0 0 #63534C;
+  ;
   
 }
 
+button:hover { 
+  box-shadow:  0 0 0 0 #63534C;
+}
 
 .smallButton {
   /* float:right; */
@@ -69,7 +102,7 @@ h2 {
 
 p { 
   font-family: futura-pt, sans-serif;
-  font-weight:500;
+  font-weight:200;
   font-style: normal;
   color:#63534C; 
 }
@@ -153,9 +186,10 @@ section {
   background-color: #E6E2E2;
 }
 
-.why-vegan { 
-  padding:50px;
-  font-size:1.2em;
+.why-vegan p{ 
+  padding-top:10px;
+  font-size: 1.5em;
+  font-weight: 200;
 }
 
 
@@ -188,7 +222,7 @@ section {
 
 /* SHOP SECTION */
 
-#shop h1:after {
+.underline:after {
   background: none repeat scroll 0 0 #63534C;
   bottom: -10px;
   content: "";
@@ -365,7 +399,13 @@ margin-top:10px;
         border-radius:3px;
         text-align: center;
         margin-top:0px;
-        padding:30px 0px 0px 0px;
+        
+      }
+
+      .symbol-row p {
+        font-size:0.7em;
+        padding-left:10%!important;
+        padding-right:10%!important;
       }
 
       .mobile-margin { 
@@ -411,6 +451,11 @@ margin-top:10px;
         font-size:1.2em;
       }
       
+
+      .symbol-row { 
+        padding:0;
+      }
+      
       .product-info { 
         margin-top:30px;
       }
@@ -420,13 +465,11 @@ margin-top:10px;
         padding:10px 0px 10px 0px;
       }
 
-      #catering h1 {
+      .shift-right h1 {
         font-size:1.2em!important;
       }
 
-      #Catiner img {
-        width:150%;
-      }
+     
 
     }
 
@@ -434,7 +477,8 @@ margin-top:10px;
 @media (max-width: 991.98px) { 
 
       .symbol-row p {
-        font-size:0.6em;
+        font-size:0.7em;
+        padding:0;
       }
 
       .subtitle { 
@@ -470,29 +514,7 @@ margin-top:10px;
   overflow:visible;
 }
 
-.links { 
-  padding:40px;
-  text-align:center;
-  color: #63534C;
-}
 
-.links a { 
-  font-family: futura-pt;
-  border-bottom:1px solid #63534C;
-  padding-bottom:1px;
-  color: #63534C;
-}
-
-.links a:hover {
-  font-size:1em;
-  text-decoration: none;
-  color: #63534C;
-}
-
-.links svg { 
-  width:0.6em;
-  margin-bottom:3px;
-}
 
 .catering-info {
   border-radius:10px;
@@ -506,7 +528,63 @@ margin-top:10px;
 #catering h2{ 
   font-size:1.5em;
   font-weight:200;
+  margin-top:50px;
 }
 
 
+/* FORM STYLES */
 
+.contact-details { 
+  /* background-color:#F2F2F2; */
+}
+
+.form { 
+  font-family: futura-pt;
+
+}
+.form .name { 
+  width:49%;
+  float:left;
+
+}
+
+.form .email {
+  width: 49%;
+  float: left;
+  margin-left:2%;
+}
+
+.form textarea {
+  border: 3px solid #63534C;
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius:5px;
+}
+
+.form input {
+  outline: 0;
+  background: white;
+  width: 100%;
+  border: 3px solid #63534C;
+  border-radius:5px;
+  margin: 0 0 2%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 900;
+  color: #63534C;
+}
+
+.contact-details h2 {
+  font-size:2.5em;
+  font-weight:300;
+  text-align:right;
+}
+
+.form button { 
+  margin-top:1%;
+}
