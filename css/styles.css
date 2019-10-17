@@ -10,6 +10,7 @@ body {
   position:relative;
 }
 
+
 .badge { 
   animation-duration: 3s;
   animation-delay: 2s;
@@ -312,11 +313,11 @@ margin-top:10px;
 }
 .ingredients .active { 
   opacity:1;
-
 }
 
+
 /* Displays first ingredient before function clears class display */
-#London {
+#Strawberry {
   display:block;
 }
 
@@ -336,10 +337,7 @@ margin-top:10px;
     margin-right:15px;
 }
 
-.top-text-hidden {
-  visibility: hidden;
-  width:0;
-}
+
 
 
 /* MOBILE STYLES */
@@ -422,17 +420,12 @@ margin-top:10px;
         padding:10px 0px 10px 0px;
       }
 
-      /* Visibility classes for table title */
-      .top-text-hidden {
-        visibility: visible!important;
-        width:100%;
-        text-align:center;
-        
+      #catering h1 {
+        font-size:1.2em!important;
       }
 
-      .title { 
-        visibility:hidden;
-        width:0;
+      #Catiner img {
+        width:150%;
       }
 
     }
@@ -455,6 +448,65 @@ margin-top:10px;
       .more-product h3 {
         font-size:0.9em;
       }
-      
-      
+    
 }
+
+.quote img {
+  width:80%;
+  opacity:0.5;
+  border-radius:30px;
+  
+  
+}
+
+.shift-right {
+  /* margin-right:-20%; */
+  
+  z-index:1;
+}
+
+.quote {
+  
+  overflow:visible;
+}
+
+.links { 
+  padding:40px;
+  text-align:center;
+  color: #63534C;
+}
+
+.links a { 
+  font-family: futura-pt;
+  border-bottom:1px solid #63534C;
+  padding-bottom:1px;
+  color: #63534C;
+}
+
+.links a:hover {
+  font-size:1em;
+  text-decoration: none;
+  color: #63534C;
+}
+
+.links svg { 
+  width:0.6em;
+  margin-bottom:3px;
+}
+
+.catering-info {
+  border-radius:10px;
+}
+
+
+#catering .symbol-row {
+  background:none;
+}
+
+#catering h2{ 
+  font-size:1.5em;
+  font-weight:200;
+}
+
+
+
