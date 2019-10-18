@@ -8,12 +8,31 @@
 body { 
   font-family:futura-pt!important;
   position:relative;
+  background-color: #E6E2E2;
+}
+
+/* .product-background { 
+  width:100%;
+  height:auto;
+  position: relative;
+} */
+
+.myHeader img{
+ 
+  width:15%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  margin-left:15%;
+  opacity:0.3;
 }
 
 /* STYLES FOR SUB-CONTENT LINKS */
 
 .links { 
-  padding:40px;
+  padding-top:30px;
+  padding-bottom:30px;
   text-align:center;
   color: #63534C;
   
@@ -114,8 +133,23 @@ header h1 {
   font-size:10em!important; 
   color:#63534C; 
   line-height:0.9em;
-
 }
+
+/* header .small-logo {
+  font-family: "Doink" !important;
+  font-size:5em!important; 
+  color:blue; 
+  line-height:0.9em;
+  transform: translate(-50%, -50%);
+}
+
+header .smaller-logo { 
+  font-family: "Doink" !important;
+  font-size:3em!important; 
+  color:red; 
+  line-height:0em;
+ 
+} */
 
 header h2 {
   font-size:1.2em !important;
@@ -144,9 +178,10 @@ header h2 {
 
 .brand { 
   text-align: center;
-  max-width:70%;
   margin:0 auto;
-  background-image:src('../assets/images/yoghurt.png');
+  max-width:70%;
+  background:src('../assets/images/yoghurt.png') none;
+  z-index: 1;
 }
 
 .navbar { 
@@ -589,4 +624,33 @@ margin-top:10px;
 
 .form button { 
   margin-top:1%;
+}
+
+footer { 
+  background-color:#f7dcb0;
+  padding-bottom:10px;
+  text-align:center;
+}
+
+
+
+footer ul, li { 
+  padding-left:10px;
+  display: inline;
+}
+
+footer  li a {
+  opacity:0.6;
+}
+
+footer li a:hover { 
+  opacity:1;
+}
+
+footer  p { 
+  padding-top:4px;
+  font-size:1em;
+  font-weight:800;
+  color:black;
+  opacity:0.6;
 }
