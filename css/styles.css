@@ -16,10 +16,11 @@ body {
   padding:40px;
   text-align:center;
   color: #63534C;
+  
 }
 
 .links a { 
-  position: absolute;
+  
   font-family: futura-pt;
   border-bottom:1px solid #63534C;
   padding-bottom:1px;
@@ -27,7 +28,7 @@ body {
 }
 
 .links a:hover {
-  font-size:1em;
+  font-size:1.2em;
   text-decoration: none;
   color: #63534C;
   -webkit-animation: shake 1s;
@@ -145,6 +146,7 @@ header h2 {
   text-align: center;
   max-width:70%;
   margin:0 auto;
+  background-image:src('../assets/images/yoghurt.png');
 }
 
 .navbar { 
