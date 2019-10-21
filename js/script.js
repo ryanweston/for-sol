@@ -1,20 +1,21 @@
 function openTab(evt, fruitName) {
-    // Declare all variables
     var i, tabcontent, tablinks;
   
-    // Get all elements with class="tabcontent" and hide them
+    // Fetches div with class name given
     tabcontent = document.getElementsByClassName("tabcontent");
+    // Loops through text for all elements found and applies css style to display none
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Get all elements with class="tablinks" and remove the class "active"
+    
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    // Show the current tab, and add an "active" class to the button that opened the tab
+    // Show the current tab 
     document.getElementById(fruitName).style.display = "block";
+    // adds an "active" class to the hovered/clicked on ingredient/tab
     evt.currentTarget.className += " active";
   }

@@ -11,25 +11,11 @@ body {
   background-color: #E6E2E2;
 }
 
-/* .product-background { 
+section { 
   width:100%;
-  height:auto;
-  position: relative;
-} */
-
-.myHeader img{
- 
-  width:15%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-  margin-left:15%;
-  opacity:0.3;
 }
 
 /* STYLES FOR SUB-CONTENT LINKS */
-
 .links { 
   padding-top:30px;
   padding-bottom:30px;
@@ -59,10 +45,29 @@ body {
   margin-bottom:3px;
 }
 
+/* Animation settings for shop badges */
 .badge { 
   animation-duration: 3s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
+}
+
+/* NAVIGATION STYLES */
+.navbar { 
+  margin:0!important;
+  padding:30px 0px 30px 0px!important;
+  background-color:white;
+}
+
+.navbar li { 
+  padding-left:20px;  
+  font-family: Doink;
+  letter-spacing: 2px;
+  color:#63534C !important;
+}
+
+.navbar a {
+  color:#63534C !important;
 }
 
 .navbar .active {
@@ -72,10 +77,17 @@ body {
   padding-right:15px!important;
 }
 
-.tabcontent {
-  display: none;
+/* Fixes navbar text to center */
+@media (min-width: 575px) { 
+  .abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
+
+/* Button Styles */
 button { 
   border:3px solid #63534C;
   border-radius:5px!important;
@@ -108,7 +120,7 @@ button:hover {
 }
 
 
-
+/* Default text styles */
 h1 { 
   font-family: "Doink" !important;
   line-height:0;
@@ -135,23 +147,18 @@ header h1 {
   line-height:0.9em;
 }
 
-/* header .small-logo {
-  font-family: "Doink" !important;
-  font-size:5em!important; 
-  color:blue; 
-  line-height:0.9em;
-  transform: translate(-50%, -50%);
+.logo-yog {
+  width:15%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  margin-left:17%;
+  opacity:0.3;
 }
 
-header .smaller-logo { 
-  font-family: "Doink" !important;
-  font-size:3em!important; 
-  color:red; 
-  line-height:0em;
- 
-} */
-
 header h2 {
+  margin-top:2%;
   font-size:1.2em !important;
   color:#63534C; 
   font-family:futura-pt!important;
@@ -179,46 +186,24 @@ header h2 {
 .brand { 
   text-align: center;
   margin:0 auto;
-  max-width:70%;
+  width:100%;
   background:src('../assets/images/yoghurt.png') none;
   z-index: 1;
 }
 
-.navbar { 
-  margin:0!important;
-  padding:30px 0px 30px 0px!important;
-  background-color:white;
+.brand img { 
+  position: relative;;
+  top:50%;
+  left:0%;
+  width: 50%;
+  
 }
-
-.navbar li { 
-  padding-left:20px;  
-  font-family: Doink;
-  letter-spacing: 2px;
-  color:#63534C !important;
-}
-
-.navbar a {
-  color:#63534C !important;
-}
-
 .arrow { 
   position:absolute;
   bottom:0px;
 }
 
-
-@media (min-width: 575px) { 
-  .abs-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-section { 
-  width:100%;
-}
-
+/* WHY VEGAN SECTION */
 .brown-sec { 
   background-color: #E6E2E2;
 }
@@ -540,14 +525,8 @@ margin-top:10px;
   
 }
 
-.shift-right {
-  /* margin-right:-20%; */
-  
-  z-index:1;
-}
-
+/* Enables overlap of text onto image on next column */
 .quote {
-  
   overflow:visible;
 }
 
@@ -570,10 +549,6 @@ margin-top:10px;
 
 
 /* FORM STYLES */
-
-.contact-details { 
-  /* background-color:#F2F2F2; */
-}
 
 .form { 
   font-family: futura-pt;
@@ -626,6 +601,7 @@ margin-top:10px;
   margin-top:1%;
 }
 
+/* FOOTER STYLES */
 footer { 
   background-color:#f7dcb0;
   padding-bottom:10px;
@@ -653,4 +629,11 @@ footer  p {
   font-weight:800;
   color:black;
   opacity:0.6;
+}
+
+
+
+/* DEFAULT STYLE FOR TABLE JS EFFECT */
+.tabcontent {
+  display: none;
 }
